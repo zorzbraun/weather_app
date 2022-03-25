@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<center><title>Vladimir Weather Application</title></center>
+</head>
+<body>
+<center><h1>Welcome to Vlady Daddy Weather Application</h1></center>
+<table border="3">
+<tr>
+    <td>country_code</td>
+    <td>name_of_the_city</td>
+    <td>temperature_min</td>
+    <td>temperature_max</td>
+    <td>pressure</td>
+    <td>humidity</td>
+</tr>
+<tr>
+    <td>{{ data['sys']['country'] }}</td>
+    <td>{{ data['name'] }}</td>
+    <td>{{ data['main']['temp_min'] }}</td>
+    <td>{{ data['main']['temp_max'] }}</td>
+    <td>{{ data['main']['pressure'] }}</td>
+    <td>{{ data['main']['humidity'] }}</td>
+</tr>
+
+</table>
+</html>
